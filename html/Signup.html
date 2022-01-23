@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Register With Us</h2>
+
+        <div class="form">
+            <div class="form-control" id="usernameForm">
+                <label for="userName">Username</label>
+                <input type="text" id="userName" placeholder="Enter Your Name">
+                <small id="usernameAlert">username must be 3 to 10 characters</small>
+            </div>
+
+            <div class="form-control" id="emailForm">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter Your Email">
+                <small id="useremailAlert">name@example.com</small>
+            </div>
+
+            <div class="form-control" id="passwordForm">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter Your Password">
+                <small id="userpasswordAlert">Paswword must be at least 8 characters</small>
+            </div>
+
+                <p id="existAlert">This email is exist</p>
+                <button onclick="signUp()">Sign Up</button>
+        </div>
+
+        <a href="../index.html" id="signin">sign in</a>
+        <h6>Do you Have an account? <a href="../index.html">logIn</a></h6>
+        
+    </div>
+
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
